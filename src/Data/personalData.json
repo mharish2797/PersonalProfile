@@ -1,0 +1,467 @@
+{
+  "home": {
+    "about": {
+      "name": "Harish Mohan",
+      "summary": "Hi, this is Harish Mohan. I'm a CS Grad Student at the Viterbi School of Engineering, USC. I graduate in May 2020. I have a strong CS foundation, thanks to my undergrad at MIT, Anna University. I'm keen on delivering scalable, automated and optimized solutions for problems evolving over time. I have some research experience pertaining to Deep learning at IIT Madras and Knowledge graphs at ISI USC. I also have industry experience working with Real-time systems at CTDT, Anna University, and Scalable backend systems at RDS Platform, AWS. Through my carefully selected coursework and projects, I have developed a significant level of expertise in Software development. I'm passionate about Machine Learning, Data Mining, Data Engineering, Artificial intelligence and Software development. At my leisure, I like to explore trending technologies, competitive programming and read machine learning articles.",
+      "resume": "url"
+    },
+    "contact": [
+      {
+        "name": "Profile",
+        "id": "mharish.dev",
+        "url": "https://www.mharish.dev"
+      },
+      {
+        "name": "Linkedin",
+        "id": "/in/harishmo/",
+        "url": "https://www.linkedin.com/in/harishmo/"
+      },
+      {
+        "name": "Github",
+        "id": "/mharish2797",
+        "url": "https://github.com/mharish2797"
+      },
+      {
+        "name": "Email",
+        "id": "harishmo@usc.edu",
+        "url": "harishmo@usc.edu"
+      },
+      {
+        "name": "Address",
+        "id": "721 W 30th Street, #8, Los Angeles, CA - 90007",
+        "url": ""
+      },
+      {
+        "name": "Phone",
+        "id": "+1 (213) 265-5314",
+        "url": ""
+      }
+    ]
+  },
+
+  "education": [
+    {
+      "degree": "Master of Science (M.S) in Computer Science",
+      "university": "University of Southern California",
+      "url": "https://www.usc.edu/",
+      "imgUri": "usc.png",
+      "location": "Los Angeles, CA, USA",
+      "graduationDate": "May 2020",
+      "gpa": 3.8,
+      "maxGpa": 4.0,
+      "coursework": [
+        "Analysis of Algorithms",
+        "Artificial Intelligence",
+        "Web Technology",
+        "Data Mining",
+        "Machine Learning",
+        "Applied Machine Learning for Games",
+        "Information Retrieval & Web Search Engine"
+      ],
+      "achievements": null
+    },
+    {
+      "degree": "Bachelor of Engineering (B.E) in Computer Science",
+      "university": "Anna University - MIT Campus",
+      "url": "https://mitindia.edu/en/",
+      "imgUri": "mit.png",
+      "location": "Chennai, Tamil Nadu, India",
+      "graduationDate": "May 2018",
+      "gpa": 9.5,
+      "maxGpa": 10,
+      "coursework": [
+        "Cloud Computing",
+        "Information Retrieval",
+        "Database Tuning",
+        "Networks",
+        "Data Structures",
+        "Operating Systems",
+        "Theory of Computation",
+        "Compiler Design",
+        "Parallel Programming",
+        "Computer Architecture"
+      ],
+      "achievements": "Gold Medalist"
+    }
+  ],
+  "skills": [
+    {
+      "type": "Programming",
+      "skillset": [
+        "Python",
+        "Java",
+        "Kotlin",
+        "Go",
+        "Scala",
+        "C",
+        "C++",
+        "Android",
+        "R",
+        "Ruby"
+      ]
+    },
+    {
+      "type": "Scripting",
+      "skillset": [
+        "HTML5",
+        "CSS",
+        "PHP",
+        "JavaScript (Ajax, jQuery, Angular, Node.js, React)",
+        "TypeScript",
+        "Bash",
+        "YAML",
+        "Jinja",
+        "Flask"
+      ]
+    },
+    {
+      "type": "Framework",
+      "skillset": [
+        "gRPC",
+        "REST APIs",
+        "Protocol Buffers",
+        "Bootstrap",
+        "Hadoop",
+        "Spark",
+        "RDF"
+      ]
+    },
+    {
+      "type": "Database",
+      "skillset": [
+        "MySQL",
+        "Oracle DB",
+        "PostgreSQL",
+        "SQLite",
+        "SPARQL",
+        "GraphDB",
+        "R2DBC",
+        "Jasync-SQL"
+      ]
+    },
+    {
+      "type": "Tools",
+      "skillset": [
+        "Docker",
+        "Kubernetes",
+        "Helm",
+        "Wikifier",
+        "MATLAB",
+        "Maven",
+        "Gradle",
+        "Xbee",
+        "Apache Solr",
+        "Unity"
+      ]
+    },
+    {
+      "type": "AWS Services",
+      "skillset": [
+        "RDS",
+        "Aurora",
+        "Lambda",
+        "Elastic Beanstalk",
+        "EKS",
+        "ECS Fargate",
+        "ECS EC2",
+        "S3",
+        "CloudWatch",
+        "CloudFormation"
+      ]
+    },
+    {
+      "type": "Library",
+      "skillset": [
+        "Tensorflow",
+        "Keras",
+        "Theano",
+        "Sci-kit learn",
+        "Pandas",
+        "Numpy",
+        "Record Linkage Toolkit"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-rds-data-api-client-library-supports-java-preview/",
+      "title": "SDE Database Intern",
+      "team": "RDS Platform",
+      "org": "Amazon Web Services, Inc.",
+      "location": "Seattle, WA",
+      "start": "May 2019",
+      "end": "August 2019",
+      "details": [
+        "Increased the number of database connections handled by instances up to 200% by investigating and harnessing the capabilities of asynchronous Jasync-SQL driver, Goroutines and Kotlin Co-routines.",
+        "Researched the features, use cases of container orchestration techniques such as EKS, ECS Fargate and devised an orchestration scheme to containerize, deploy, manage and monitor native applications."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://usc-isi-i2.github.io/home/",
+      "title": "Graduate Researcher",
+      "team": "Center on Knowledge Graphs",
+      "org": "Information Sciences Institute - USC",
+      "location": "Los Angeles, CA",
+      "start": "February 2019",
+      "end": "May 2020",
+      "details": [
+        "Programmed Logistic and Neural Network-based classifiers to evaluate the performance of embedding techniques such as VERSE, Word2Vec, and TransX over different classes of Wikidata for constructing Knowledge graphs.",
+        "Constructed a Page ranking system using Apache Solr to link the entities and relations in the mention-concept graph."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "http://ctdt.annauniv.edu/",
+      "title": "Software Research Intern",
+      "team": "Police Department, State Government of Tamil Nadu",
+      "org": "Centre for Technology Development & Transfer",
+      "location": "Chennai, India",
+      "start": "June 2017",
+      "end": "August 2017",
+      "details": [
+        "Led a team of 6 members in prototyping a Laser-LDR based time tracking system using automated python scripts with an accuracy up to 1 millisecond and performed wireless data transfer by utilizing Arduino and Xbee modules.",
+        "Received a grant of $1500 from Tamil Nadu Uniform Services Recruitment Board."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://rise-iil.github.io/about",
+      "title": "Summer Research Fellow",
+      "team": "Integrated Intelligence Laboratory (IIL)",
+      "org": "Indian Institute of Technology Madras",
+      "location": "Chennai, India",
+      "start": "May 2017",
+      "end": "July 2017",
+      "details": [
+        "Improved the image classification rate in CIPHAR-10 dataset by 14.3% by binarizing the weights and activation outputs of neural network using Stochastic descent and discretization processes employing Shift based AdaMax rule"
+      ],
+      "technology": ""
+    }
+  ],
+  "projects": [
+    {
+      "url": "https://github.com/mharish2797/Song-Clustering-using-Locality-Sensitive-Hashing",
+      "title": "Song Clustering using Locality sensitive hashing",
+      "start": "April 2019",
+      "end": "May 2019",
+      "details": [
+        "Performed K-Medoids songs clustering using Locality sensitive hashing as the distance metrics.",
+        "Employed Map-Reduce technique to process millions of songs and cluster them based on lyrics similarity.",
+        "Gained insights regarding the relationship among song attributes like lyrics, genre, year released and artists."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "http://prod-searcher.appspot.com/",
+      "title": "Product Search using eBay API",
+      "start": "March 2019",
+      "end": "April 2019",
+      "details": [
+        "Designed a Website and Android App for E-commerce through eBay APIs [Angular – frontend, Node.js - backend]",
+        "Incorporated features like filtered search, auto-completion, animations, Google’s custom search, Facebook sharing."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://github.com/mharish2797/Computation-Service-using-gRPC",
+      "title": "Computation service using gRPC",
+      "start": "February 2019",
+      "end": "March 2019",
+      "details": [
+        "Engineered a Computation service comprising of several micro services that communicated using gRPC APIs such as Unary, Server streaming, Client streaming, Bidirectional streaming.",
+        "Leveraged features like Interceptors, SSL Security, Error Codes, gRPC Reflections and Deadlines in the service."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://github.com/mharish2797/Car-routing-using-MDP-Reinforcement-Learning",
+      "title": "Car Routing using Reinforcement learning",
+      "start": "October 2018",
+      "end": "November 2018",
+      "details": [
+        "Implemented a Car routing algorithm using Markov Decision processes like Value iteration and Policy iteration that predicted obstacle collisions by up to 87% accuracy."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://github.com/mharish2797/Resource-Allocation-using-Min-Max-algorithm-Adverserial-Search",
+      "title": "Resource Allocation using Adversarial Search algorithms",
+      "start": "September 2018",
+      "end": "October 2018",
+      "details": [
+        "Optimally allocated resources to two contentious organizations based on a set of factors by mutating the Min-Max algorithm to maximize the utility value of the respective organizations."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "https://github.com/mharish2797/DNN-Text-Classifiers",
+      "title": "Text Classification using integrated Convolutional and Recurrent Neural Networks",
+      "start": "December 2017",
+      "end": "April 2018",
+      "details": [
+        "Authored a thesis on designing an efficient DNN to effectively integrate Convolutional neural networks and Gated Recurrent Units which surpassed the precision of existing DNN by 7% for classifying text documents.",
+        "Raised DNN’s accuracy by 5% through developing a new activation function - Inverse Exponential Linear Unit."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "",
+      "title": "Offline Internet using Intelligent Web Data Extraction",
+      "start": "February 2017",
+      "end": "April 2017",
+      "details": [
+        "Built Android application to browse the web without any internet connection by using BoilerPipe Java Web API to collect web page content from the remote server using Java, PHP, XML for front-end and NodeJS for the back-end."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "",
+      "title": "Intelligent Music Recommender System",
+      "start": "January 2017",
+      "end": "March 2017",
+      "details": [
+        "Created a recommender system to suggest songs based on user’s past choices and similarities among songs by applying collaborative filter machine learning algorithm and suggestions matched with user’s preference by 87%."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "",
+      "title": "Dynamic Bus Tracking System based on Cloud Computing and Machine learning",
+      "start": "August 2016",
+      "end": "October 2016",
+      "details": [
+        "Analyzed the traffic flow pattern of transit buses and formulated an algorithm based on K-nearest neighbours to predict the dynamic location of buses using cloud data and predictions were 82% accurate.",
+        "Used Google Map API for front-end and Java, PHP, MySQL, Python for back-end."
+      ],
+      "technology": ""
+    },
+    {
+      "url": "",
+      "title": "Commuter Pass Automation System",
+      "start": "February 2016",
+      "end": "April 2016",
+      "details": [
+        "Deployed a Web portal and Android app to automate the registration/renewal of commuter passes for transit buses.",
+        "Used HTML, CSS, JSP, XML, AJAX for front-end and Java, PHP, MySQL for back-end."
+      ],
+      "technology": ""
+    }
+  ],
+  "honors": {
+    "awards": [
+      {
+        "title": "Certificate of Merit",
+        "details": "University Topper among 10000+ students",
+        "keywords": [],
+        "date": "August 2015"
+      },
+      {
+        "title": "M. Subburaya Iyer Scholarship",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "March 2016"
+      },
+      {
+        "title": "R.K.Murthy Memorial Scholarship",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "March 2016"
+      },
+      {
+        "title": "Thiru. C. Rajam Ramasamy Memorial Prize",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "March 2016"
+      },
+      {
+        "title": "MIT Silver Jubilee Scholarship",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "March 2016"
+      },
+      {
+        "title": "Sri Kamakoti Scholarship",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "March 2016"
+      },
+      {
+        "title": "Certificate of Award & Gold Medal",
+        "details": "College Topper among 3000+ students",
+        "keywords": [],
+        "date": "April 2018"
+      }
+    ],
+    "activities": [
+      {
+        "title": "Department representative",
+        "details": "Represented 200 students of the Computer Technology department at MIT campus."
+      },
+      {
+        "title": "Event Organizer",
+        "details": "Co-Ordinated International Conference on Advanced Computing 2018 and conducted 20+ coding events, 10+ workshops, and 15+ non-tech events."
+      },
+      {
+        "title": "Teaching experience",
+        "details": "Mentored a group of 60 students on competitive programming and Android development."
+      }
+    ],
+    "certification": [
+      {
+        "title": "gRPC Master Class: Build Modern API & Micro services",
+        "org": "Udemy",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-9AADFSXO/"
+      },
+      {
+        "title": "Android App Development",
+        "org": "Udemy",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-KRYPA1D1/"
+      },
+      {
+        "title": "Using Python for Research",
+        "org": "Harvard University",
+        "details": null,
+        "url": "https://courses.edx.org/certificates/c3e32bd2c3054cd5a72131557cf7c95d"
+      },
+      {
+        "title": "Machine Learning",
+        "org": "Stanford University",
+        "details": null,
+        "url": "https://www.coursera.org/account/accomplishments/verify/KNADQRA89V36"
+      },
+      {
+        "title": "Python for Data Science",
+        "org": "Microsoft",
+        "details": null,
+        "url": "https://courses.edx.org/certificates/fa4187f45728416f9d767b42564c8609"
+      },
+      {
+        "title": "Programming with Java",
+        "org": "Udemy",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-HD5RBVW4/"
+      },
+      {
+        "title": "R Programming Language",
+        "org": "Udemy",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-ACV96P5E/"
+      },
+      {
+        "title": "Cyber Lab Development",
+        "org": "Udemy",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-E4X5IH01/"
+      },
+      {
+        "title": "Cyber Security",
+        "org": "DeVry University",
+        "details": null,
+        "url": "https://www.udemy.com/certificate/UC-2H9VGU54/"
+      }
+    ]
+  }
+}
