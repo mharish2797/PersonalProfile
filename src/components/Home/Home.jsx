@@ -5,7 +5,6 @@ import HomeCard from "./HomeCard";
 //Remember for extracting images
 class Home extends Component {
   render() {
-
     const { data } = this.props;
     return (
       <React.Fragment>

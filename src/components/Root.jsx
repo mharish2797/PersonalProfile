@@ -4,11 +4,11 @@ import data from "../Data/personalData.json";
 import Home from "./Home/Home";
 import Education from "./Education/Education";
 import Skills from "./Skills";
-import Experience from "./Experience";
-import Projects from "./Projects";
-import Awards from "./Awards";
-import Certification from "./Certification";
-import Activities from "./Activities";
+import Experience from "./Experience/Experience";
+import Projects from "./Projects/Projects";
+import Awards from "./Honors/Awards";
+import Certification from "./Honors/Certification";
+import Activities from "./Honors/Activities";
 import ContactMe from "./ContactMe";
 class Data extends Component {
   constructor(props) {
@@ -20,15 +20,15 @@ class Data extends Component {
       skills: <Skills data={data["skills"]}></Skills>,
       experience: <Experience data={data["experience"]}></Experience>,
       projects: <Projects data={data["projects"]}></Projects>,
-      awards: <Awards data={data["awards"]}></Awards>,
-      activities: <Activities data={data["activities"]}></Activities>,
+      awards: <Awards data={data["honors"]["awards"]}></Awards>,
+      activities: <Activities data={data["honors"]["activities"]}></Activities>,
       certification: (
-        <Certification data={data["certification"]}></Certification>
+        <Certification data={data["honors"]["certification"]}></Certification>
       ),
       contact: <ContactMe></ContactMe>,
     };
     this.state = {
-      currentPage: this.sectionMap.education,
+      currentPage: this.sectionMap.skills,
     };
   }
 

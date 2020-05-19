@@ -1,4 +1,4 @@
-.edu-card {
+.proj-card {
   flex-direction: row !important;
   height: 100%;
   margin: 5%;
@@ -22,8 +22,5 @@
   .card-body {
     display: flex;
     flex-direction: column;
-  }
-  .list-group {
-    width: 90%;
   }
 }

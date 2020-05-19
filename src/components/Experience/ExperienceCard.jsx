@@ -1,16 +1,10 @@
 import React, { Component } from "react";
-import {
-  Card,
-  ListGroup,
-  ListGroupItem,
-  Container,
-  Row,
-  Col,
-} from "react-bootstrap";
-import "../../css/EducationCard.scss";
+import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import "../../css/ExperienceCard.scss";
 import axios from "axios";
+import * as Icon from "react-bootstrap-icons";
 
-class EducationCard extends Component {
+class ExperienceCard extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,6 +38,7 @@ class EducationCard extends Component {
     let maxObj = dimList.sort(function (a, b) {
       return b.total - a.total;
     });
+    console.log(maxObj[0].total);
 
     if (maxObj[0].total > 2400) return maxObj[0].url;
     else return this.state.imgUri;
@@ -53,6 +48,7 @@ class EducationCard extends Component {
     let domain = site.replace("https://", "");
     domain = domain.substr(0, domain.indexOf("/"));
     let url = `http://favicongrabber.com/api/grab/${domain}?pretty=true`;
+    console.log(url);
 
     try {
       const res = await axios.get(url);
@@ -67,56 +63,47 @@ class EducationCard extends Component {
   };
 
   componentWillMount() {
-    const { edu } = this.props;
-    const { imgUri } = edu;
+    const { exp } = this.props;
+    const { imgUri } = exp;
 
     this.setState(
       {
-        imgUri: require(`../../Data/Images/Education/${imgUri}`),
+        imgUri: require(`../../Data/Images/Experience/${imgUri}`),
       },
       () => {
-        if (!this.state.imgSet) this.getImg(edu.url);
+        if (!this.state.imgSet) this.getImg(exp.url);
       }
     );
   }
 
   render() {
-    const { edu } = this.props;
+    const { exp } = this.props;
     const { imgUri } = this.state;
     return (
       <React.Fragment>
-        <Card border="dark" className="edu-card">
+        <Card border="dark" className="exp-card">
           <Card.Img className="card-img" variant="left" src={imgUri} />
           <Card.Body>
-            <Card.Header as="h5">{edu.degree}</Card.Header>
+            <Card.Header as="h5">{exp.title}</Card.Header>
             <Card.Title>
-              <a target="_blank" rel="noopener noreferrer" href={edu.url}>
-                {edu.university}
+              <a target="_blank" rel="noopener noreferrer" href={exp.url}>
+                {exp.team}
               </a>
-              , {edu.location}
+              , <span style={{ fontSize: "80%" }}>{exp.org}</span>
             </Card.Title>
             <Card.Text>
-              <Container fluid>
-                <Row className="show-grid">
-                  <Col>{edu.date}</Col>
-                  <Col lg={3}>
-                    <b>Grade Point Average: </b>
-                    <i>{edu.gpa}</i>
-                  </Col>
-                  <Col>
-                    {edu.achievements && (
-                      <React.Fragment>
-                        &emsp;
-                        <b>[{edu.achievements}]</b>
-                      </React.Fragment>
-                    )}
-                  </Col>
-                </Row>
-              </Container>
+              {exp.start} - {exp.end}
+              <br />
               <ListGroup horizontal="lg" className="list-group">
-                {edu.coursework.map((course) => (
-                  <ListGroupItem key={course}>{course}</ListGroupItem>
-                ))}
+                <ListGroupItem>
+                  {exp.details.map((course) => (
+                    <React.Fragment>
+                      <Icon.BoxArrowRight color="royalblue" size={30} />
+                      &nbsp;{course}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                </ListGroupItem>
               </ListGroup>
             </Card.Text>
           </Card.Body>
@@ -126,4 +113,4 @@ class EducationCard extends Component {
   }
 }
 
-export default EducationCard;
+export default ExperienceCard;

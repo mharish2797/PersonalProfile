@@ -2,7 +2,11 @@
   "home": {
     "about": {
       "name": "Harish Mohan",
-      "summary": "Hi, this is Harish Mohan. I'm a CS Grad Student at the Viterbi School of Engineering, USC. I graduate in May 2020. I have a strong CS foundation, thanks to my undergrad at MIT, Anna University. I'm keen on delivering scalable, automated and optimized solutions for problems evolving over time. I have some research experience pertaining to Deep learning at IIT Madras and Knowledge graphs at ISI USC. I also have industry experience working with Real-time systems at CTDT, Anna University, and Scalable backend systems at RDS Platform, AWS. Through my carefully selected coursework and projects, I have developed a significant level of expertise in Software development. I'm passionate about Machine Learning, Data Mining, Data Engineering, Artificial intelligence and Software development. At my leisure, I like to explore trending technologies, competitive programming and read machine learning articles.",
+      "summary": [
+        "Hi, this is Harish Mohan. I'm a CS Grad Student at the Viterbi School of Engineering, USC. I graduate in May 2020. I have a strong CS foundation, thanks to my undergrad at MIT, Anna University.",
+        "I'm keen on delivering scalable, automated and optimized solutions for problems evolving over time. I have some research experience pertaining to Deep learning at IIT Madras and Knowledge graphs at ISI USC. I also have industry experience working with Real-time systems at CTDT, Anna University, and Scalable backend systems at RDS Platform, AWS.",
+        "Through my carefully selected coursework and projects, I have developed a significant level of expertise in Software development. I'm passionate about Machine Learning, Data Mining, Data Engineering, Artificial intelligence and Software development. At my leisure, I like to explore trending technologies, competitive programming and read machine learning articles."
+      ],
       "resume": "url"
     },
     "contact": [
@@ -46,9 +50,8 @@
       "url": "https://www.usc.edu/",
       "imgUri": "usc.png",
       "location": "Los Angeles, CA, USA",
-      "graduationDate": "May 2020",
-      "gpa": 3.8,
-      "maxGpa": 4.0,
+      "date": "Aug 2018 - May 2020",
+      "gpa": "3.8 / 4.0",
       "coursework": [
         "Analysis of Algorithms",
         "Artificial Intelligence",
@@ -61,14 +64,13 @@
       "achievements": null
     },
     {
-      "degree": "Bachelor of Engineering (B.E) in Computer Science",
+      "degree": "Bachelor of Engineering (B.E) in Computer Science and Engineering",
       "university": "Anna University - MIT Campus",
       "url": "https://mitindia.edu/en/",
       "imgUri": "mit.png",
       "location": "Chennai, Tamil Nadu, India",
-      "graduationDate": "May 2018",
-      "gpa": 9.5,
-      "maxGpa": 10,
+      "date": "Aug 2014 - May 2018",
+      "gpa": "9.5 / 10",
       "coursework": [
         "Cloud Computing",
         "Information Retrieval",
@@ -88,8 +90,8 @@
     {
       "type": "Programming",
       "skillset": [
-        "Python",
         "Java",
+        "Python",
         "Kotlin",
         "Go",
         "Scala",
@@ -106,7 +108,7 @@
         "HTML5",
         "CSS",
         "PHP",
-        "JavaScript (Ajax, jQuery, Angular, Node.js, React)",
+        { "JavaScript": ["Ajax", "jQuery", "Angular", "Node.js", "React"] },
         "TypeScript",
         "Bash",
         "YAML",
@@ -184,6 +186,7 @@
   ],
   "experience": [
     {
+      "imgUri": "aws.png",
       "url": "https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-rds-data-api-client-library-supports-java-preview/",
       "title": "SDE Database Intern",
       "team": "RDS Platform",
@@ -198,6 +201,7 @@
       "technology": ""
     },
     {
+      "imgUri": "isi.png",
       "url": "https://usc-isi-i2.github.io/home/",
       "title": "Graduate Researcher",
       "team": "Center on Knowledge Graphs",
@@ -212,7 +216,8 @@
       "technology": ""
     },
     {
-      "url": "http://ctdt.annauniv.edu/",
+      "imgUri": "ctdt.png",
+      "url": "https://ctdt.annauniv.edu/",
       "title": "Software Research Intern",
       "team": "Police Department, State Government of Tamil Nadu",
       "org": "Centre for Technology Development & Transfer",
@@ -226,6 +231,7 @@
       "technology": ""
     },
     {
+      "imgUri": "iitm.png",
       "url": "https://rise-iil.github.io/about",
       "title": "Summer Research Fellow",
       "team": "Integrated Intelligence Laboratory (IIL)",
@@ -250,18 +256,26 @@
         "Employed Map-Reduce technique to process millions of songs and cluster them based on lyrics similarity.",
         "Gained insights regarding the relationship among song attributes like lyrics, genre, year released and artists."
       ],
-      "technology": ""
+      "technology": ["map-reduce", "pyspark", "locality-sensitive-hashing"]
     },
     {
-      "url": "http://prod-searcher.appspot.com/",
+      "liveUrl": "http://prod-searcher.appspot.com/",
+      "url": "https://github.com/mharish2797/Product-Search-Web-Application-Ebay-API",
       "title": "Product Search using eBay API",
       "start": "March 2019",
       "end": "April 2019",
       "details": [
-        "Designed a Website and Android App for E-commerce through eBay APIs [Angular – frontend, Node.js - backend]",
+        "Designed a Website and Android App for E-commerce through eBay APIs",
         "Incorporated features like filtered search, auto-completion, animations, Google’s custom search, Facebook sharing."
       ],
-      "technology": ""
+      "technology": [
+        "angular",
+        "node.js",
+        "android",
+        "bootstrap",
+        "java",
+        "xml"
+      ]
     },
     {
       "url": "https://github.com/mharish2797/Computation-Service-using-gRPC",
@@ -272,7 +286,13 @@
         "Engineered a Computation service comprising of several micro services that communicated using gRPC APIs such as Unary, Server streaming, Client streaming, Bidirectional streaming.",
         "Leveraged features like Interceptors, SSL Security, Error Codes, gRPC Reflections and Deadlines in the service."
       ],
-      "technology": ""
+      "technology": [
+        "ssl-security",
+        "interceptors",
+        "gRPC",
+        "streaming",
+        "reflections"
+      ]
     },
     {
       "url": "https://github.com/mharish2797/Car-routing-using-MDP-Reinforcement-Learning",
@@ -282,7 +302,7 @@
       "details": [
         "Implemented a Car routing algorithm using Markov Decision processes like Value iteration and Policy iteration that predicted obstacle collisions by up to 87% accuracy."
       ],
-      "technology": ""
+      "technology": ["mdp", "ai"]
     },
     {
       "url": "https://github.com/mharish2797/Resource-Allocation-using-Min-Max-algorithm-Adverserial-Search",
@@ -292,7 +312,7 @@
       "details": [
         "Optimally allocated resources to two contentious organizations based on a set of factors by mutating the Min-Max algorithm to maximize the utility value of the respective organizations."
       ],
-      "technology": ""
+      "technology": ["min-max", "ai"]
     },
     {
       "url": "https://github.com/mharish2797/DNN-Text-Classifiers",
@@ -303,7 +323,7 @@
         "Authored a thesis on designing an efficient DNN to effectively integrate Convolutional neural networks and Gated Recurrent Units which surpassed the precision of existing DNN by 7% for classifying text documents.",
         "Raised DNN’s accuracy by 5% through developing a new activation function - Inverse Exponential Linear Unit."
       ],
-      "technology": ""
+      "technology": ["dnn", "cnn", "rnn", "ielu", "gru"]
     },
     {
       "url": "",
@@ -311,9 +331,9 @@
       "start": "February 2017",
       "end": "April 2017",
       "details": [
-        "Built Android application to browse the web without any internet connection by using BoilerPipe Java Web API to collect web page content from the remote server using Java, PHP, XML for front-end and NodeJS for the back-end."
+        "Built Android application to browse the web without any internet connection by using BoilerPipe Java Web API to collect web page content from the remote server."
       ],
-      "technology": ""
+      "technology": ["android", "java", "node.js", "php", "xml"]
     },
     {
       "url": "",
@@ -323,7 +343,7 @@
       "details": [
         "Created a recommender system to suggest songs based on user’s past choices and similarities among songs by applying collaborative filter machine learning algorithm and suggestions matched with user’s preference by 87%."
       ],
-      "technology": ""
+      "technology": ["ml", "collaborative-filters"]
     },
     {
       "url": "",
@@ -331,10 +351,9 @@
       "start": "August 2016",
       "end": "October 2016",
       "details": [
-        "Analyzed the traffic flow pattern of transit buses and formulated an algorithm based on K-nearest neighbours to predict the dynamic location of buses using cloud data and predictions were 82% accurate.",
-        "Used Google Map API for front-end and Java, PHP, MySQL, Python for back-end."
+        "Analyzed the traffic flow pattern of transit buses and formulated an algorithm based on K-nearest neighbours to predict the dynamic location of buses using cloud data and predictions were 82% accurate."
       ],
-      "technology": ""
+      "technology": ["knn", "google-map-api", "java", "php", "mysql", "python"]
     },
     {
       "url": "",
@@ -342,53 +361,61 @@
       "start": "February 2016",
       "end": "April 2016",
       "details": [
-        "Deployed a Web portal and Android app to automate the registration/renewal of commuter passes for transit buses.",
-        "Used HTML, CSS, JSP, XML, AJAX for front-end and Java, PHP, MySQL for back-end."
+        "Deployed a Web portal and Android app to automate the registration/renewal of commuter passes for transit buses."
       ],
-      "technology": ""
+      "technology": [
+        "html",
+        "css",
+        "jsp",
+        "xml",
+        "ajax",
+        "java",
+        "php",
+        "mysql"
+      ]
     }
   ],
   "honors": {
     "awards": [
       {
         "title": "Certificate of Merit",
-        "details": "University Topper among 10000+ students",
+        "details": ["University Topper among 10000+ students"],
         "keywords": [],
         "date": "August 2015"
       },
       {
         "title": "M. Subburaya Iyer Scholarship",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "March 2016"
       },
       {
         "title": "R.K.Murthy Memorial Scholarship",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "March 2016"
       },
       {
         "title": "Thiru. C. Rajam Ramasamy Memorial Prize",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "March 2016"
       },
       {
         "title": "MIT Silver Jubilee Scholarship",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "March 2016"
       },
       {
         "title": "Sri Kamakoti Scholarship",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "March 2016"
       },
       {
         "title": "Certificate of Award & Gold Medal",
-        "details": "College Topper among 3000+ students",
+        "details": ["College Topper among 3000+ students"],
         "keywords": [],
         "date": "April 2018"
       }
@@ -396,15 +423,21 @@
     "activities": [
       {
         "title": "Department representative",
-        "details": "Represented 200 students of the Computer Technology department at MIT campus."
+        "details": [
+          "Represented 200 students of the Computer Technology department at MIT campus."
+        ]
       },
       {
         "title": "Event Organizer",
-        "details": "Co-Ordinated International Conference on Advanced Computing 2018 and conducted 20+ coding events, 10+ workshops, and 15+ non-tech events."
+        "details": [
+          "Co-Ordinated International Conference on Advanced Computing 2018 and conducted 20+ coding events, 10+ workshops, and 15+ non-tech events."
+        ]
       },
       {
         "title": "Teaching experience",
-        "details": "Mentored a group of 60 students on competitive programming and Android development."
+        "details": [
+          "Mentored a group of 60 students on competitive programming and Android development."
+        ]
       }
     ],
     "certification": [
@@ -412,55 +445,64 @@
         "title": "gRPC Master Class: Build Modern API & Micro services",
         "org": "Udemy",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-9AADFSXO/"
+        "url": "https://www.udemy.com/certificate/UC-9AADFSXO/",
+        "image": "udemy.jpg"
       },
       {
         "title": "Android App Development",
         "org": "Udemy",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-KRYPA1D1/"
+        "url": "https://www.udemy.com/certificate/UC-KRYPA1D1/",
+        "image": "udemy.jpg"
       },
       {
         "title": "Using Python for Research",
         "org": "Harvard University",
         "details": null,
-        "url": "https://courses.edx.org/certificates/c3e32bd2c3054cd5a72131557cf7c95d"
+        "url": "https://courses.edx.org/certificates/c3e32bd2c3054cd5a72131557cf7c95d",
+        "image": "harvard.png"
       },
       {
         "title": "Machine Learning",
         "org": "Stanford University",
         "details": null,
-        "url": "https://www.coursera.org/account/accomplishments/verify/KNADQRA89V36"
+        "url": "https://www.coursera.org/account/accomplishments/verify/KNADQRA89V36",
+        "image": "stanford.png"
       },
       {
         "title": "Python for Data Science",
         "org": "Microsoft",
         "details": null,
-        "url": "https://courses.edx.org/certificates/fa4187f45728416f9d767b42564c8609"
+        "url": "https://courses.edx.org/certificates/fa4187f45728416f9d767b42564c8609",
+        "image": "microsoft.png"
       },
       {
         "title": "Programming with Java",
         "org": "Udemy",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-HD5RBVW4/"
+        "url": "https://www.udemy.com/certificate/UC-HD5RBVW4/",
+        "image": "udemy.jpg"
       },
       {
         "title": "R Programming Language",
         "org": "Udemy",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-ACV96P5E/"
+        "url": "https://www.udemy.com/certificate/UC-ACV96P5E/",
+        "image": "udemy.jpg"
       },
       {
         "title": "Cyber Lab Development",
         "org": "Udemy",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-E4X5IH01/"
+        "url": "https://www.udemy.com/certificate/UC-E4X5IH01/",
+        "image": "udemy.jpg"
       },
       {
         "title": "Cyber Security",
         "org": "DeVry University",
         "details": null,
-        "url": "https://www.udemy.com/certificate/UC-2H9VGU54/"
+        "url": "https://www.udemy.com/certificate/UC-2H9VGU54/",
+        "image": "devry.png"
       }
     ]
   }

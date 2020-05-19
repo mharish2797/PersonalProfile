@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import "../css/NavigBar.css";
+import "../css/NavigBar.scss";
 
 export class NavigBar extends Component {
   filterHeaders = ["home", "honors"];
@@ -20,10 +20,7 @@ export class NavigBar extends Component {
       ));
 
     const accolades = Object.keys(data["honors"]).map((entry) => (
-      <NavDropdown.Item
-        onClick={() => click(entry)}
-        key={entry}
-      >
+      <NavDropdown.Item onClick={() => click(entry)} key={entry}>
         {this.camelCase(entry)}
       </NavDropdown.Item>
     ));
@@ -34,7 +31,7 @@ export class NavigBar extends Component {
           sticky="top"
           collapseOnSelect
           expand="lg"
-          bg="dark"
+          className="bg-color-gradient"
           variant="dark"
         >
           <Navbar.Brand onClick={() => click("home")}>
