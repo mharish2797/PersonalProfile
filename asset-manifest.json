@@ -1,26 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ab6f918.chunk.css",
-    "main.js": "/static/js/main.334c2171.chunk.js",
-    "main.js.map": "/static/js/main.334c2171.chunk.js.map",
+    "main.css": "/static/css/main.237f8da6.chunk.css",
+    "main.js": "/static/js/main.0f723e8d.chunk.js",
+    "main.js.map": "/static/js/main.0f723e8d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6317d45f.js",
     "runtime-main.js.map": "/static/js/runtime-main.6317d45f.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.6bb1f613.chunk.js": "/static/js/2.6bb1f613.chunk.js",
-    "static/js/2.6bb1f613.chunk.js.map": "/static/js/2.6bb1f613.chunk.js.map",
+    "static/js/2.58b7ee82.chunk.js": "/static/js/2.58b7ee82.chunk.js",
+    "static/js/2.58b7ee82.chunk.js.map": "/static/js/2.58b7ee82.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3ebbcec2585c6449d8d0e4c869b132b9.js": "/precache-manifest.3ebbcec2585c6449d8d0e4c869b132b9.js",
+    "precache-manifest.169bbeb20544be05365eb059e5252142.js": "/precache-manifest.169bbeb20544be05365eb059e5252142.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.8ab6f918.chunk.css.map": "/static/css/main.8ab6f918.chunk.css.map",
-    "static/js/2.6bb1f613.chunk.js.LICENSE.txt": "/static/js/2.6bb1f613.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.ee7cd8ed.svg"
+    "static/css/main.237f8da6.chunk.css.map": "/static/css/main.237f8da6.chunk.css.map",
+    "static/js/2.58b7ee82.chunk.js.LICENSE.txt": "/static/js/2.58b7ee82.chunk.js.LICENSE.txt",
+    "static/media/Resume.pdf": "/static/media/Resume.ac1c013c.pdf",
+    "static/media/aws2.png": "/static/media/aws2.abba1f72.png",
+    "static/media/ctdt.png": "/static/media/ctdt.8db0746b.png",
+    "static/media/devry.png": "/static/media/devry.31d7c81d.png",
+    "static/media/displayPic3.jpg": "/static/media/displayPic3.5abd63a3.jpg",
+    "static/media/harvard.png": "/static/media/harvard.83a05b10.png",
+    "static/media/iitm.png": "/static/media/iitm.3d8c9b25.png",
+    "static/media/isi.png": "/static/media/isi.ae49bb8e.png",
+    "static/media/mit2.png": "/static/media/mit2.74a3bf0b.png",
+    "static/media/stanford.png": "/static/media/stanford.02a7a231.png",
+    "static/media/udemy.jpg": "/static/media/udemy.97ef8514.jpg",
+    "static/media/usc.png": "/static/media/usc.545499e5.png"
   },
   "entrypoints": [
     "static/js/runtime-main.6317d45f.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.6bb1f613.chunk.js",
-    "static/css/main.8ab6f918.chunk.css",
-    "static/js/main.334c2171.chunk.js"
+    "static/js/2.58b7ee82.chunk.js",
+    "static/css/main.237f8da6.chunk.css",
+    "static/js/main.0f723e8d.chunk.js"
   ]
 }
