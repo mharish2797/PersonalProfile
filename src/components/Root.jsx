@@ -6,10 +6,11 @@ import Education from "./Education/Education";
 import Skills from "./Skills";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
-import Awards from "./Honors/Awards";
-import Certification from "./Honors/Certification";
-import Activities from "./Honors/Activities";
+// import Awards from "./Honors/Awards";
+// import Certification from "./Honors/Certification";
+// import Activities from "./Honors/Activities";
 import ContactMe from "./ContactMe";
+import Honors from "./Honors/Honors";
 class Data extends Component {
   constructor(props) {
     super(props);
@@ -20,23 +21,34 @@ class Data extends Component {
       skills: <Skills data={data["skills"]}></Skills>,
       experience: <Experience data={data["experience"]}></Experience>,
       projects: <Projects data={data["projects"]}></Projects>,
-      awards: <Awards data={data["honors"]["awards"]}></Awards>,
-      activities: <Activities data={data["honors"]["activities"]}></Activities>,
-      certification: (
-        <Certification data={data["honors"]["certification"]}></Certification>
-      ),
+      // awards: <Awards data={data["honors"]["awards"]}></Awards>,
+      // activities: <Activities data={data["honors"]["activities"]}></Activities>,
+      // certification: (
+      //   <Certification data={data["honors"]["certification"]}></Certification>
+      // ),
       contact: <ContactMe></ContactMe>,
     };
     this.state = {
-      currentPage: this.sectionMap.skills,
+      // currentPage: this.sectionMap.honors,
+      currentPage: (
+        <Honors data={data["honors"]} currSection={"awards"}></Honors>
+      ),
     };
   }
 
   navClick = (section) => {
     console.log(section);
-    this.setState({
-      currentPage: this.sectionMap[section],
-    });
+    if (Object.keys(data["honors"]).includes(section)) {
+      this.setState({
+        currentPage: (
+          <Honors data={data["honors"]} currSection={section}></Honors>
+        ),
+      });
+    } else {
+      this.setState({
+        currentPage: this.sectionMap[section],
+      });
+    }
   };
 
   render() {

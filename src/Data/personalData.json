@@ -51,7 +51,7 @@
       "imgUri": "usc.png",
       "location": "Los Angeles, CA, USA",
       "date": "Aug 2018 - May 2020",
-      "gpa": "3.8 / 4.0",
+      "gpa": "3.8/4.0",
       "coursework": [
         "Analysis of Algorithms",
         "Artificial Intelligence",
@@ -64,13 +64,13 @@
       "achievements": null
     },
     {
-      "degree": "Bachelor of Engineering (B.E) in Computer Science and Engineering",
+      "degree": "Bachelor of Engineering (B.E) in Computer Science & Engineering",
       "university": "Anna University - MIT Campus",
       "url": "https://mitindia.edu/en/",
-      "imgUri": "mit.png",
+      "imgUri": "mit2.png",
       "location": "Chennai, Tamil Nadu, India",
       "date": "Aug 2014 - May 2018",
-      "gpa": "9.5 / 10",
+      "gpa": "9.5/10",
       "coursework": [
         "Cloud Computing",
         "Information Retrieval",
@@ -186,7 +186,7 @@
   ],
   "experience": [
     {
-      "imgUri": "aws.png",
+      "imgUri": "aws2.png",
       "url": "https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-rds-data-api-client-library-supports-java-preview/",
       "title": "SDE Database Intern",
       "team": "RDS Platform",
@@ -379,65 +379,69 @@
     "awards": [
       {
         "title": "Certificate of Merit",
-        "details": ["University Topper among 10000+ students"],
+        "details": [
+          "Certifies that Harish Mohan has secured absolute 10 GPA in the academic year 2014-2015"
+        ],
         "keywords": [],
-        "date": "August 2015"
+        "date": "August 2015",
+        "by": "Anna University"
       },
       {
-        "title": "M. Subburaya Iyer Scholarship",
-        "details": ["College Topper among 3000+ students"],
+        "title": "M. Subbaraya Iyer Scholarship",
+        "details": [
+          "For the academic year 2014-2015, this award was presented to the Meritorious student (based on previous year marks) of Madras Institute of Technology Campus, Anna University.",
+          "This award was presented on Institute day of Madras Institute of Technology Campus."
+        ],
         "keywords": [],
-        "date": "March 2016"
+        "date": "March 2016",
+        "by": "Madras Institute of Technology Campus"
       },
       {
         "title": "R.K.Murthy Memorial Scholarship",
-        "details": ["College Topper among 3000+ students"],
+        "details": [
+          "For the academic year 2014-2015, this award was presented to the Meritorious student of Madras Institute of Technology Campus, Anna University.",
+          "This award was presented on Alumni day of Madras Institute of Technology Campus."
+        ],
         "keywords": [],
-        "date": "March 2016"
+        "date": "March 2016",
+        "by": "Madras Institute of Technology Campus"
       },
       {
         "title": "Thiru. C. Rajam Ramasamy Memorial Prize",
-        "details": ["College Topper among 3000+ students"],
+        "details": [
+          "For the academic year 2015-2016, this award was presented to the College Topper of Madras Institute of Technology Campus, Anna University.",
+          "This award was presented on Founder's day of Madras Institute of Technology Campus."
+        ],
         "keywords": [],
-        "date": "March 2016"
+        "date": "March 2016",
+        "by": "Madras Institute of Technology Campus"
       },
       {
         "title": "MIT Silver Jubilee Scholarship",
-        "details": ["College Topper among 3000+ students"],
+        "details": [
+          "For the academic year 2015-2016, this award was presented to the Meritorious student of Madras Institute of Technology Campus, Anna University.",
+          "This award was presented on Alumni day of Madras Institute of Technology Campus."
+        ],
         "keywords": [],
-        "date": "March 2016"
+        "date": "March 2016",
+        "by": "Madras Institute of Technology Campus"
       },
       {
         "title": "Sri Kamakoti Scholarship",
-        "details": ["College Topper among 3000+ students"],
+        "details": [
+          "For the academic year 2015-2016, this award was presented to the Meritorious student of Madras Institute of Technology Campus, Anna University.",
+          "This award was presented on Founder's day of Madras Institute of Technology Campus."
+        ],
         "keywords": [],
-        "date": "March 2016"
+        "date": "March 2016",
+        "by": "Madras Institute of Technology Campus"
       },
       {
         "title": "Certificate of Award & Gold Medal",
         "details": ["College Topper among 3000+ students"],
         "keywords": [],
-        "date": "April 2018"
-      }
-    ],
-    "activities": [
-      {
-        "title": "Department representative",
-        "details": [
-          "Represented 200 students of the Computer Technology department at MIT campus."
-        ]
-      },
-      {
-        "title": "Event Organizer",
-        "details": [
-          "Co-Ordinated International Conference on Advanced Computing 2018 and conducted 20+ coding events, 10+ workshops, and 15+ non-tech events."
-        ]
-      },
-      {
-        "title": "Teaching experience",
-        "details": [
-          "Mentored a group of 60 students on competitive programming and Android development."
-        ]
+        "date": "April 2018",
+        "by": "Anna University"
       }
     ],
     "certification": [
@@ -503,6 +507,26 @@
         "details": null,
         "url": "https://www.udemy.com/certificate/UC-2H9VGU54/",
         "image": "devry.png"
+      }
+    ],
+    "activities": [
+      {
+        "title": "Department representative",
+        "details": [
+          "Represented 200 students of the Computer Technology department at MIT campus."
+        ]
+      },
+      {
+        "title": "Event Organizer",
+        "details": [
+          "Co-Ordinated International Conference on Advanced Computing 2018 and conducted 20+ coding events, 10+ workshops, and 15+ non-tech events."
+        ]
+      },
+      {
+        "title": "Teaching experience",
+        "details": [
+          "Mentored a group of 60 students on competitive programming and Android development."
+        ]
       }
     ]
   }

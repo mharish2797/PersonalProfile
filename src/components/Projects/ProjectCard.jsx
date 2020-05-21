@@ -33,7 +33,7 @@ class ProjectCard extends Component {
     const { variants } = this.state;
     return (
       <React.Fragment>
-        <Card border="dark" className="proj-card">
+        <Card border="dark" className="proj-card mx-auto">
           <Card.Body>
             <Card.Title>
               {proj.title}{" "}
@@ -67,10 +67,10 @@ class ProjectCard extends Component {
                   <Col sm={6} className="text-right">
                     <React.Fragment>
                       {proj.technology.map((tech, index) => (
-                        <React.Fragment>
+                        <React.Fragment  key={tech}>
                           <Badge
                             pills
-                            key={tech}
+                           
                             variant={
                               variants[
                                 Math.floor(Math.random() * variants.length) %
@@ -91,7 +91,7 @@ class ProjectCard extends Component {
               <ListGroup style={{ width: "100%" }}>
                 <ListGroupItem>
                   {proj.details.map((course) => (
-                    <React.Fragment>
+                    <React.Fragment key={course}>
                       <Icon.BoxArrowRight color="royalblue" size={30} />
                       &nbsp;{course}
                       <br />

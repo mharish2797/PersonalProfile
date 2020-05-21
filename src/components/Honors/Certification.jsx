@@ -8,7 +8,6 @@ import {
   Image,
   Button,
 } from "react-bootstrap";
-import Modalar from "./Modalar";
 class Certification extends Component {
   constructor(props) {
     super(props);
@@ -31,37 +30,35 @@ class Certification extends Component {
       <React.Fragment>
         {data.map((certificate) => (
           <React.Fragment>
-            <ListGroup
-              className="list-group"
-              style={{ width: "50%", textAlign: "left" }}
-            >
+            <ListGroup>
               <ListGroupItem key={certificate.title}>
                 <Container>
                   <Row>
-                    <Col>
+                    <Col md={2} lg={2}>
                       <Image
                         rounded
-                        width="71px"
-                        height="60px"
+                        width="80%"
+                        height="80%"
                         src={require(`../../Data/Images/Honors/${certificate.image}`)}
                       ></Image>
                     </Col>
                     <Col>
-                      {certificate.org} - {certificate.title}
+                      <h5>{certificate.title} </h5> {certificate.org}
                     </Col>
-                    <Col>
+                    <Col md={3} lg={3}>
                       <Button
-                        variant="primary"
-                        onClick={() => this.setModalShow(true)}
+                        target="_blank"
+                        variant="outline-dark"
+                        href={certificate.url}
                       >
                         View Certificate
                       </Button>
 
-                      <Modalar
+                      {/* <Modalar
                         displayUri={certificate.url}
                         show={this.state.modalShow}
                         onHide={() => this.setModalShow(false)}
-                      />
+                      /> */}
                     </Col>
                   </Row>
                 </Container>

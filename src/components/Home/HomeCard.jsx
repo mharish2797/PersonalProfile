@@ -14,7 +14,7 @@ class HomeCard extends Component {
                 <Image
                   fluid
                   className="card-img "
-                  src={require("../../Data/Images/displayPic3.jpg")}
+                  src={require("../../Data/Images/displayPic/displayPic3.jpg")}
                 />
               </Col>
               <Col lg={6}>

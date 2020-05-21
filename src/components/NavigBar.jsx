@@ -20,7 +20,11 @@ export class NavigBar extends Component {
       ));
 
     const accolades = Object.keys(data["honors"]).map((entry) => (
-      <NavDropdown.Item onClick={() => click(entry)} key={entry}>
+      <NavDropdown.Item
+        variant="light"
+        onClick={() => click(entry)}
+        key={entry}
+      >
         {this.camelCase(entry)}
       </NavDropdown.Item>
     ));
@@ -34,7 +38,10 @@ export class NavigBar extends Component {
           className="bg-color-gradient"
           variant="dark"
         >
-          <Navbar.Brand onClick={() => click("home")}>
+          <Navbar.Brand
+            style={{ cursor: "pointer" }}
+            onClick={() => click("home")}
+          >
             Harish's Portfolio
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -46,7 +53,9 @@ export class NavigBar extends Component {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link onClick={() => click("contact")}>Contact Me</Nav.Link>
+              <Nav.Link onClick={() => click("contact")}>
+                <strong>Contact Me</strong>
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>

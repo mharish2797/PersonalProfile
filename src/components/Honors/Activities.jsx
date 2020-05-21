@@ -8,7 +8,7 @@ class Activities extends Component {
     return (
       <React.Fragment>
         {data.map((activity) => (
-          <Card border="dark" className="honor-card">
+          <Card border="dark" className="activity-card">
             <Card.Body>
               <Card.Title> {activity.title}</Card.Title>
               <Card.Text>{activity.details.map((detail) => detail)}</Card.Text>

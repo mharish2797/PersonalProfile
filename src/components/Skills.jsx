@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import {
   Table,
-  Card,
   Dropdown,
   DropdownButton,
   ListGroup,
   ListGroupItem,
 } from "react-bootstrap";
+import "../css/Skills.scss";
 
 class Skills extends Component {
   processListItem(ski) {
@@ -20,10 +20,8 @@ class Skills extends Component {
     let buffer = [];
     for (let keyer in ski) {
       let temp = ski[keyer].map((arr) => (
-        <React.Fragment>
-          <Dropdown.Item disabled key={arr}>
-            {arr}
-          </Dropdown.Item>
+        <React.Fragment key={arr}>
+          <Dropdown.Item disabled>{arr}</Dropdown.Item>
           <Dropdown.Divider />
         </React.Fragment>
       ));
@@ -48,34 +46,32 @@ class Skills extends Component {
 
     return (
       <React.Fragment>
-        <Card>
-          <Table striped bordered hover className="text-left" variant="dark">
-            <thead>
-              <tr>
-                <th>Type</th>
-                <th>Skill set</th>
+        <Table striped bordered hover className="skills-card mx-auto">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Skill set</th>
+            </tr>
+          </thead>
+          <tbody>
+            {skills.map((skill, index) => (
+              <tr key={index}>
+                <td>
+                  <b>{skill.type}</b>
+                </td>
+                <td>
+                  <ListGroup
+                    horizontal="lg"
+                    variant="secondary"
+                    className="list-group"
+                  >
+                    {skill.skillset.map((ski) => this.processListItem(ski))}
+                  </ListGroup>
+                </td>
               </tr>
-            </thead>
-            <tbody>
-              {skills.map((skill, index) => (
-                <tr key={index}>
-                  <td>
-                    <b>{skill.type}</b>
-                  </td>
-                  <td>
-                    <ListGroup
-                      horizontal="lg"
-                      variant="secondary"
-                      className="list-group"
-                    >
-                      {skill.skillset.map((ski) => this.processListItem(ski))}
-                    </ListGroup>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </Table>
-        </Card>
+            ))}
+          </tbody>
+        </Table>
       </React.Fragment>
     );
   }

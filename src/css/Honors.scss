@@ -1,26 +1,12 @@
 .honor-card {
-  flex-direction: row !important;
   height: 100%;
-  margin: 5%;
-  width: 90%;
+  margin: 2%;
+  width: 70%;
   text-align: left;
+}
 
-  .card-header {
-    text-align: center;
-    width: 90%;
-  }
-  .card-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .card-img-left {
-    width: 15%;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
+.activity-card {
+  text-align: left;
+  margin: 1%;
+  width: 95%;
 }

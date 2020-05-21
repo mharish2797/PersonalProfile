@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import {
+  Card,
+  ListGroup,
+  ListGroupItem,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
 import "../../css/ExperienceCard.scss";
 import axios from "axios";
 import * as Icon from "react-bootstrap-icons";
@@ -69,6 +76,7 @@ class ExperienceCard extends Component {
     this.setState(
       {
         imgUri: require(`../../Data/Images/Experience/${imgUri}`),
+        imgSet: true,
       },
       () => {
         if (!this.state.imgSet) this.getImg(exp.url);
@@ -81,32 +89,51 @@ class ExperienceCard extends Component {
     const { imgUri } = this.state;
     return (
       <React.Fragment>
-        <Card border="dark" className="exp-card">
-          <Card.Img className="card-img" variant="left" src={imgUri} />
-          <Card.Body>
-            <Card.Header as="h5">{exp.title}</Card.Header>
-            <Card.Title>
-              <a target="_blank" rel="noopener noreferrer" href={exp.url}>
-                {exp.team}
-              </a>
-              , <span style={{ fontSize: "80%" }}>{exp.org}</span>
-            </Card.Title>
-            <Card.Text>
-              {exp.start} - {exp.end}
-              <br />
-              <ListGroup horizontal="lg" className="list-group">
-                <ListGroupItem>
-                  {exp.details.map((course) => (
-                    <React.Fragment>
-                      <Icon.BoxArrowRight color="royalblue" size={30} />
-                      &nbsp;{course}
-                      <br />
-                    </React.Fragment>
-                  ))}
-                </ListGroupItem>
-              </ListGroup>
-            </Card.Text>
-          </Card.Body>
+        <Card border="dark" className="mx-auto exp-card">
+          <Container fluid>
+            <Row>
+              <Col
+                className="align-self-center align-self-lg-center"
+                sm
+                md={3}
+                lg={2}
+              >
+                <Card.Img
+                  className=" rounded card-img"
+                  variant="left"
+                  src={imgUri}
+                />
+              </Col>
+              <Col md={9} lg={10}>
+                <Card.Body>
+                  <Card.Header className="header-color" as="h5">
+                    {exp.title}
+                  </Card.Header>
+                  <Card.Title>
+                    <a target="_blank" rel="noopener noreferrer" href={exp.url}>
+                      {exp.team}
+                    </a>
+                    &emsp;<span style={{ fontSize: "80%" }}>{exp.org}</span>
+                  </Card.Title>
+                  <Card.Text>
+                    {exp.start} - {exp.end}
+                    <br />
+                    <ListGroup horizontal="lg" className="list-group">
+                      <ListGroupItem>
+                        {exp.details.map((experience) => (
+                          <React.Fragment key={experience}>
+                            <Icon.BoxArrowRight color="royalblue" size={30} />
+                            &nbsp;{experience}
+                            <br />
+                          </React.Fragment>
+                        ))}
+                      </ListGroupItem>
+                    </ListGroup>
+                  </Card.Text>
+                </Card.Body>
+              </Col>
+            </Row>
+          </Container>
         </Card>
       </React.Fragment>
     );
