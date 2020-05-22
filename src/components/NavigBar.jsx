@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import "../css/NavigBar.scss";
-
+import { Button } from "react-bootstrap";
 export class NavigBar extends Component {
   filterHeaders = ["home", "honors"];
   camelCase(string) {
@@ -21,7 +21,8 @@ export class NavigBar extends Component {
 
     const accolades = Object.keys(data["honors"]).map((entry) => (
       <NavDropdown.Item
-        variant="light"
+        as={Button}
+        variant="outline-dark"
         onClick={() => click(entry)}
         key={entry}
       >

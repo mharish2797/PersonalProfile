@@ -9,38 +9,28 @@
       ],
       "resume": "url"
     },
-    "contact": [
-      {
-        "name": "Profile",
-        "id": "mharish.dev",
-        "url": "https://www.mharish.dev"
-      },
-      {
-        "name": "Linkedin",
+    "contact": {
+      "linkedin": {
         "id": "/in/harishmo/",
         "url": "https://www.linkedin.com/in/harishmo/"
       },
-      {
-        "name": "Github",
+      "github": {
         "id": "/mharish2797",
         "url": "https://github.com/mharish2797"
       },
-      {
-        "name": "Email",
+      "email": {
         "id": "harishmo@usc.edu",
-        "url": "harishmo@usc.edu"
+        "url": "mailto:harishmo@usc.edu"
       },
-      {
-        "name": "Address",
-        "id": "721 W 30th Street, #8, Los Angeles, CA - 90007",
-        "url": ""
+      "twitter": {
+        "id": "mharish2797",
+        "url": "https://twitter.com/mharish2797"
       },
-      {
-        "name": "Phone",
-        "id": "+1 (213) 265-5314",
-        "url": ""
+      "dev": {
+        "id": "mharish2797",
+        "url": "https://dev.to/mharish2797"
       }
-    ]
+    }
   },
 
   "education": [
@@ -108,7 +98,12 @@
         "HTML5",
         "CSS",
         "PHP",
-        { "JavaScript": ["Ajax", "jQuery", "Angular", "Node.js", "React"] },
+        "JavaScript",
+        "Ajax",
+        "jQuery",
+        "Angular",
+        "Node.js",
+        "React",
         "TypeScript",
         "Bash",
         "YAML",

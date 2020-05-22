@@ -26,13 +26,13 @@ class Data extends Component {
       // certification: (
       //   <Certification data={data["honors"]["certification"]}></Certification>
       // ),
-      contact: <ContactMe></ContactMe>,
+      contact: <ContactMe data={data["home"]}></ContactMe>,
     };
     this.state = {
-      // currentPage: this.sectionMap.honors,
-      currentPage: (
-        <Honors data={data["honors"]} currSection={"awards"}></Honors>
-      ),
+      currentPage: this.sectionMap.home,
+      // currentPage: (
+      //   <Honors data={data["honors"]} currSection={"awards"}></Honors>
+      // ),
     };
   }
 

@@ -110,13 +110,25 @@ class ExperienceCard extends Component {
                     {exp.title}
                   </Card.Header>
                   <Card.Title>
-                    <a target="_blank" rel="noopener noreferrer" href={exp.url}>
-                      {exp.team}
-                    </a>
-                    &emsp;<span style={{ fontSize: "80%" }}>{exp.org}</span>
+                    <Container fluid>
+                      <Row style={{ padding: "0.5%" }}>
+                        <Col lg="auto">
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={exp.url}
+                          >
+                            {exp.team}
+                          </a>
+                        </Col>
+                        <Col>
+                          <span style={{ fontSize: "80%" }}>{exp.org}</span>
+                        </Col>
+                      </Row>
+                    </Container>
                   </Card.Title>
                   <Card.Text>
-                    {exp.start} - {exp.end}
+                    &emsp;{exp.start} - {exp.end}
                     <br />
                     <ListGroup horizontal="lg" className="list-group">
                       <ListGroupItem>

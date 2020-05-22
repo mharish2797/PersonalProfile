@@ -99,7 +99,7 @@ class EducationCard extends Component {
                     <br />
                     <Container fluid>
                       <Row>
-                        <Col sm={12} lg={7}>
+                        <Col sm="auto" md="auto" lg="auto">
                           <a
                             target="_blank"
                             rel="noopener noreferrer"
