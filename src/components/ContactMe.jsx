@@ -139,7 +139,7 @@ class ContactMe extends Component {
         </Card>
         <Card className="contact-card mx-auto" bg="dark" text="light">
           <Card.Title className="text-center">Contact</Card.Title>
-          <Form method={"POST"} onSubmit={this.sendEmail}>
+          <Form method="POST" onSubmit={this.sendEmail}>
             <Form.Group controlId="from_name">
               <Form.Control required type="text" placeholder="Name" />
             </Form.Group>
@@ -161,9 +161,10 @@ class ContactMe extends Component {
               />
             </Form.Group>
             <div
-              className="g-recaptcha"
+              class="g-recaptcha"
               data-sitekey="6LeScfoUAAAAAIBBpGFLIkYYgf5cAxN5lpa5vCGI"
             ></div>
+
             <br />
             <Form.Group as={Row}>
               <Col style={{ textAlign: "center" }}>
