@@ -17,10 +17,7 @@ class Skills extends Component {
                   <Card.Text>
                     {skill["skillset"].map((sk, ind) => (
                       // <ListGroupItem key={ind}>{sk}</ListGroupItem>
-                      <React.Fragment>
-                        {sk}
-                        <br />
-                      </React.Fragment>
+                      <React.Fragment>{sk}, </React.Fragment>
                     ))}
                   </Card.Text>
                 </Card.Body>

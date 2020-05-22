@@ -64,6 +64,8 @@ class ContactMe extends Component {
         },
       },
     };
+    this.element = document.createElement("script");
+    this.element.setAttribute("src", "https://www.google.com/recaptcha/api.js");
   }
 
   getIcons = () => {
@@ -124,6 +126,14 @@ class ContactMe extends Component {
       );
   };
 
+  componentWillMount() {
+    document.getElementsByTagName("head").item(0).appendChild(this.element);
+  }
+
+  componentWillUnmount() {
+    document.getElementsByTagName("head").item(0).removeChild(this.element);
+  }
+
   render() {
     const iconTags = this.getIcons();
     return (
@@ -161,10 +171,9 @@ class ContactMe extends Component {
               />
             </Form.Group>
             <div
-              class="g-recaptcha"
+              className="g-recaptcha"
               data-sitekey="6LeScfoUAAAAAIBBpGFLIkYYgf5cAxN5lpa5vCGI"
             ></div>
-
             <br />
             <Form.Group as={Row}>
               <Col style={{ textAlign: "center" }}>
