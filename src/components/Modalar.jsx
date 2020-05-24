@@ -8,7 +8,7 @@ class Modalar extends Component {
 
     return (
       <Modal
-        backdrop={true}
+        // backdrop={true}
         show={show}
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
@@ -20,11 +20,7 @@ class Modalar extends Component {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Iframe
-            allowFullScreen
-            src="http://www.youtube.com/embed/xDMP3i36naA"
-            fluid
-          />
+          Message sent
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={onHide}>Close</Button>

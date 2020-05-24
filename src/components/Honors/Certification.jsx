@@ -32,13 +32,13 @@ class Certification extends Component {
           <React.Fragment>
             <ListGroup>
               <ListGroupItem key={certificate.title}>
-                <Container>
+                <Container fluid>
                   <Row>
                     <Col md={2} lg={2}>
                       <Image
                         rounded
-                        width="80%"
-                        height="80%"
+                        width="30%"
+                        height="50%"
                         src={require(`../../Data/Images/Honors/${certificate.image}`)}
                       ></Image>
                     </Col>

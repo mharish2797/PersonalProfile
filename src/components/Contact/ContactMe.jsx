@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-import "../css/ContactMe.scss";
+import "../../css/ContactMe.scss";
 import {
   Form,
   Button,
@@ -13,6 +13,9 @@ import {
 import { IconContext } from "react-icons";
 import { GrLinkedin, GrMail, GrLocation } from "react-icons/gr";
 import { FaGithub, FaDev, FaTwitter } from "react-icons/fa";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 class ContactMe extends Component {
   constructor(props) {
     super(props);
@@ -119,9 +122,11 @@ class ContactMe extends Component {
       .then(
         (result) => {
           console.log(result.text);
+          toast("Message sent successfully");
         },
         (error) => {
           console.log(error.text);
+          toast.dark("Error occured, please try again");
         }
       );
   };
@@ -188,6 +193,17 @@ class ContactMe extends Component {
             </Form.Group>
           </Form>
         </Card>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
         <Card className="social-iconset mx-auto" bg="white" text="dark">
           <Card.Body>
             <Card.Text>

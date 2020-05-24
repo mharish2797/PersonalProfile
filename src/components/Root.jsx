@@ -9,7 +9,7 @@ import Projects from "./Projects/Projects";
 // import Awards from "./Honors/Awards";
 // import Certification from "./Honors/Certification";
 // import Activities from "./Honors/Activities";
-import ContactMe from "./ContactMe";
+import ContactMe from "./Contact/ContactMe";
 import Honors from "./Honors/Honors";
 class Data extends Component {
   constructor(props) {
@@ -29,10 +29,10 @@ class Data extends Component {
       contact: <ContactMe data={data["home"]}></ContactMe>,
     };
     this.state = {
-      currentPage: this.sectionMap.home,
-      // currentPage: (
-      //   <Honors data={data["honors"]} currSection={"awards"}></Honors>
-      // ),
+      // currentPage: this.sectionMap.contact,
+      currentPage: (
+        <Honors data={data["honors"]} currSection={"awards"}></Honors>
+      ),
     };
   }
 
@@ -55,6 +55,9 @@ class Data extends Component {
     return (
       <React.Fragment>
         <NavigBar data={data} click={this.navClick}></NavigBar>
+        {/* <div className="w-100 p-3 h-100 d-inline-block bg-dark">
+          {this.state.currentPage}
+        </div> */}
         {this.state.currentPage}
       </React.Fragment>
     );
