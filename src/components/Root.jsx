@@ -3,7 +3,7 @@ import NavigBar from "./NavigBar";
 import data from "../Data/personalData.json";
 import Home from "./Home/Home";
 import Education from "./Education/Education";
-import Skills from "./Skills";
+import Skills from "./Skills/Skills";
 import Experience from "./Experience/Experience";
 import Projects from "./Projects/Projects";
 // import Awards from "./Honors/Awards";
@@ -29,10 +29,10 @@ class Data extends Component {
       contact: <ContactMe data={data["home"]}></ContactMe>,
     };
     this.state = {
-      // currentPage: this.sectionMap.contact,
-      currentPage: (
-        <Honors data={data["honors"]} currSection={"awards"}></Honors>
-      ),
+      currentPage: this.sectionMap.home,
+      // currentPage: (
+      //   <Honors data={data["honors"]} currSection={"awards"}></Honors>
+      // ),
     };
   }
 

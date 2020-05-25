@@ -43,7 +43,7 @@ export class NavigBar extends Component {
             style={{ cursor: "pointer" }}
             onClick={() => click("home")}
           >
-            Harish's Portfolio
+            Home
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

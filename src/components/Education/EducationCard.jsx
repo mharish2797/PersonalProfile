@@ -140,7 +140,7 @@ class EducationCard extends Component {
                             md={6}
                             lg={4}
                             key={course}
-                            className="bg-dark text-white"
+                            className="bg-dark text-white border-white "
                           >
                             {course}
                           </Col>

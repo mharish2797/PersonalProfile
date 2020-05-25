@@ -76,109 +76,78 @@
       "achievements": "Gold Medalist"
     }
   ],
-  "skills": [
-    {
-      "type": "Programming",
-      "skillset": [
-        "Java",
-        "Python",
-        "Kotlin",
-        "Go",
-        "Scala",
-        "C",
-        "C++",
-        "Android",
-        "R",
-        "Ruby"
-      ]
+
+  "skills": {
+    "Programming": {
+      "Java, Kotlin": [
+        "Core",
+        "JVM",
+        "OOPS",
+        "MVC",
+        "Streams",
+        "Collections",
+        "Multi-threading"
+      ],
+      "Python": ["Core", "Iterators"],
+      "Go": [],
+      "Scala": [],
+      "Javascript": ["REST APIs", "AJAX"]
     },
-    {
-      "type": "Scripting",
-      "skillset": [
-        "HTML5",
-        "CSS",
-        "PHP",
-        "JavaScript",
-        "Ajax",
-        "jQuery",
-        "Angular",
-        "Node.js",
-        "React",
-        "TypeScript",
-        "Bash",
-        "YAML",
-        "Jinja",
-        "Flask"
-      ]
+
+    "Software development tools": {
+      "Microservices": ["gRPC", "Protocol buffers"],
+      "Containers & Orchestrators": ["Docker", "Kubernetes"],
+      "Version Control": ["Git", "Github", "Gitlab"],
+      "Practices": ["Agile", "Scrum", "Jira"]
     },
-    {
-      "type": "Framework",
-      "skillset": [
-        "gRPC",
-        "REST APIs",
-        "Protocol Buffers",
-        "Bootstrap",
-        "Hadoop",
-        "Spark",
-        "RDF"
-      ]
+
+    "Web development": {
+      "Design": ["HTML5", "Bootstrap", "SCSS"],
+      "Front-end Framework": ["jQuery", "React", "Angular", "Jinja"],
+      "Back-end Framework": ["PHP", "Node + Express", "Flask"],
+      "Mobile App Development": ["Android", "Django", "React Native"]
     },
-    {
-      "type": "Database",
-      "skillset": [
-        "MySQL",
-        "Oracle DB",
-        "PostgreSQL",
-        "SQLite",
-        "SPARQL",
-        "GraphDB",
-        "R2DBC",
-        "Jasync-SQL"
-      ]
+
+    "Database": {
+      "Relational": ["MySQL", "PostgreSQL", "SQLite", "OracleDB"],
+      "No SQL": ["GraphDB/RDF", "MongoDB"],
+      "Query Languages": ["SPARQL", "SQL"],
+      "Drivers": ["JDBC", "Jasync-SQL", "R2DBC"]
     },
-    {
-      "type": "Tools",
-      "skillset": [
-        "Docker",
-        "Kubernetes",
-        "Helm",
+
+    "Data engineering framework": {
+      "Knowledge Graph": [
         "Wikifier",
-        "MATLAB",
-        "Maven",
-        "Gradle",
-        "Xbee",
-        "Apache Solr",
-        "Unity"
-      ]
+        "Record Linkage Toolkit",
+        "Solr",
+        "Lucene"
+      ],
+      "Big Data": ["Hadoop", "Spark"]
     },
-    {
-      "type": "AWS Services",
-      "skillset": [
-        "RDS",
-        "Aurora",
-        "Lambda",
-        "Elastic Beanstalk",
-        "EKS",
-        "ECS Fargate",
-        "ECS EC2",
-        "S3",
-        "CloudWatch",
-        "CloudFormation"
-      ]
+
+    "AWS Services": {
+      "Compute": ["EC2", "Lambda", "Elastic Beanstalk"],
+      "Containers": [
+        "Elastic Container Registry",
+        "Elastic Container Service",
+        "Elastic Kubernetes Service"
+      ],
+      "Database": ["RDS", "Aurora", "DynamoDB"],
+      "Management": ["CloudWatch", "CloudFormation"]
     },
-    {
-      "type": "Library",
-      "skillset": [
+
+    "Machine learning": {
+      "Framework": [
         "Tensorflow",
         "Keras",
-        "Theano",
-        "Sci-kit learn",
+        "Pytorch",
+        "Scikit-learn",
         "Pandas",
-        "Numpy",
-        "Record Linkage Toolkit"
+        "Numpy"
       ]
     }
-  ],
+  },
+
   "experience": [
     {
       "imgUri": "aws2.png",
