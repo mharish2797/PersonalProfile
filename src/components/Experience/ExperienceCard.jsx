@@ -130,17 +130,19 @@ class ExperienceCard extends Component {
                   <Card.Text>
                     &emsp;{exp.start} - {exp.end}
                     <br />
-                    <ListGroup horizontal="lg" className="list-group">
-                      <ListGroupItem>
-                        {exp.details.map((experience) => (
-                          <React.Fragment key={experience}>
-                            <Icon.BoxArrowRight color="royalblue" size={30} />
-                            &nbsp;{experience}
-                            <br />
-                          </React.Fragment>
-                        ))}
-                      </ListGroupItem>
-                    </ListGroup>
+                    {exp.details.length > 0 && (
+                      <ListGroup horizontal="lg" className="list-group">
+                        <ListGroupItem>
+                          {exp.details.map((experience) => (
+                            <React.Fragment key={experience}>
+                              <Icon.BoxArrowRight color="royalblue" size={30} />
+                              &nbsp;{experience}
+                              <br />
+                            </React.Fragment>
+                          ))}
+                        </ListGroupItem>
+                      </ListGroup>
+                    )}
                   </Card.Text>
                 </Card.Body>
               </Col>

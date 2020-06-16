@@ -121,11 +121,13 @@ class ContactMe extends Component {
       .send(YOUR_SERVICE_ID, YOUR_TEMPLATE_ID, emessage, YOUR_USER_ID)
       .then(
         (result) => {
-          console.log(result.text);
           toast("Message sent successfully");
+          content.target.from_name.value = "";
+          content.target.reply_to.value = "";
+          content.target.message.value = "";
+          content.target.subject.value = "";
         },
         (error) => {
-          console.log(error.text);
           toast.dark("Error occured, please try again");
         }
       );

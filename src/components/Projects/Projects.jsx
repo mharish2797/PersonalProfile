@@ -7,10 +7,7 @@ class Projects extends Component {
     return (
       <React.Fragment>
         {data.map((proj, index) => (
-          <ProjectCard
-            key={index}
-            proj={proj}
-          ></ProjectCard>
+          <ProjectCard key={index} proj={proj}></ProjectCard>
         ))}
       </React.Fragment>
     );

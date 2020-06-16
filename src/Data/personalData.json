@@ -3,7 +3,7 @@
     "about": {
       "name": "Harish Mohan",
       "summary": [
-        "Hi, this is Harish Mohan. I'm a CS Grad Student at the Viterbi School of Engineering, USC. I graduate in May 2020. I have a strong CS foundation, thanks to my undergrad at MIT, Anna University.",
+        "Hi, this is Harish Mohan. I'm a Software Developer at Amazon Web Services, Inc. I earned my Masters in Computer Science from Viterbi School of Engineering, USC. I have a strong CS foundation, thanks to my undergrad at MIT, Anna University.",
         "I'm keen on delivering scalable, automated and optimized solutions for problems evolving over time. I have some research experience pertaining to Deep learning at IIT Madras and Knowledge graphs at ISI USC. I also have industry experience working with Real-time systems at CTDT, Anna University, and Scalable backend systems at RDS Platform, AWS.",
         "Through my carefully selected coursework and projects, I have developed a significant level of expertise in Software development. I'm passionate about Machine Learning, Data Mining, Data Engineering, Artificial intelligence and Software development. At my leisure, I like to explore trending technologies, competitive programming and read machine learning articles."
       ],
@@ -19,8 +19,8 @@
         "url": "https://github.com/mharish2797"
       },
       "email": {
-        "id": "harishmo@usc.edu",
-        "url": "mailto:harishmo@usc.edu"
+        "id": "mharish2797@gmail.com",
+        "url": "mailto:mharish2797@gmail.com"
       },
       "twitter": {
         "id": "mharish2797",
@@ -88,10 +88,39 @@
         "Collections",
         "Multi-threading"
       ],
-      "Python": ["Core", "Iterators"],
-      "Go": [],
-      "Scala": [],
-      "Javascript": ["REST APIs", "AJAX"]
+      "Python": [
+        "Core",
+        "Iterators",
+        "Collections",
+        "Pypi packaging",
+        "Graph theory",
+        "ML"
+      ],
+      "Go": [
+        "Core",
+        "Collections",
+        "OOPS",
+        "Remote Funtion Calls",
+        "Go Routines",
+        "Concurrency",
+        "Synchronization"
+      ],
+      "Scala": [
+        "Core",
+        "Higher Order Functions",
+        "Traits",
+        "Pattern Matching",
+        "Collections",
+        "Streams",
+        "Reactive Programming"
+      ],
+      "Javascript": [
+        "REST APIs",
+        "AJAX",
+        "DOM Interaction",
+        "Event Handling",
+        "Reactive Programming"
+      ]
     },
 
     "Software development tools": {
@@ -152,16 +181,13 @@
     {
       "imgUri": "aws2.png",
       "url": "https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-rds-data-api-client-library-supports-java-preview/",
-      "title": "SDE Database Intern",
+      "title": "Software Development Engineer",
       "team": "RDS Platform",
       "org": "Amazon Web Services, Inc.",
       "location": "Seattle, WA",
-      "start": "May 2019",
-      "end": "August 2019",
-      "details": [
-        "Increased the number of database connections handled by instances up to 200% by investigating and harnessing the capabilities of asynchronous Jasync-SQL driver, Goroutines and Kotlin Co-routines.",
-        "Researched the features, use cases of container orchestration techniques such as EKS, ECS Fargate and devised an orchestration scheme to containerize, deploy, manage and monitor native applications."
-      ],
+      "start": "June 2020",
+      "end": "Present",
+      "details": [],
       "technology": ""
     },
     {
@@ -174,8 +200,24 @@
       "start": "February 2019",
       "end": "May 2020",
       "details": [
+        "Engineered a Wikifier system to annotate documents using Wikipedia concepts for corpus by generating Mention-Concept graphs.",
         "Programmed Logistic and Neural Network-based classifiers to evaluate the performance of embedding techniques such as VERSE, Word2Vec, and TransX over different classes of Wikidata for constructing Knowledge graphs.",
         "Constructed a Page ranking system using Apache Solr to link the entities and relations in the mention-concept graph."
+      ],
+      "technology": ""
+    },
+    {
+      "imgUri": "aws2.png",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2019/11/amazon-rds-data-api-client-library-supports-java-preview/",
+      "title": "SDE Database Intern",
+      "team": "RDS Platform",
+      "org": "Amazon Web Services, Inc.",
+      "location": "Seattle, WA",
+      "start": "May 2019",
+      "end": "August 2019",
+      "details": [
+        "Increased the number of database connections handled by instances up to 200% by investigating and harnessing the capabilities of asynchronous Jasync-SQL driver, Goroutines and Kotlin Co-routines.",
+        "Researched the features, use cases of container orchestration techniques such as EKS, ECS Fargate and devised an orchestration scheme to containerize, deploy, manage and monitor native applications."
       ],
       "technology": ""
     },
@@ -211,6 +253,51 @@
   ],
   "projects": [
     {
+      "liveUrl": "https://mharish.dev/",
+      "url": "https://github.com/mharish2797/PersonalProfile",
+      "title": "Personal Portfolio using React",
+      "start": "April 2020",
+      "end": "May 2020",
+      "details": [
+        "Created a simple personal homepage using React and Bootstrap.",
+        "Utilized features like EmailJS, reCAPTCHA and hosted the page using gh-pages."
+      ],
+      "technology": ["react", "bootstrap", "jsx", "github-pages", "json"]
+    },
+    {
+      "liveUrl": "https://pypi.org/project/hac-img/",
+      "url": "https://github.com/mharish2797/Hierarchical-image-clustering",
+      "title": "Image Categorization using Hierarchical Agglomerative Clustering (HAC)",
+      "start": "March 2020",
+      "end": "April 2020",
+      "details": [
+        "Developed an algorithm based on Hierarchical Image Clustering to group images based on their RGB similarity.",
+        "Built and Deployed a Python package to use this application from any python program."
+      ],
+      "technology": ["python", "hac", "clustering", "pypi"]
+    },
+    {
+      "liveUrl": "https://youtu.be/3rH2FxNgYHk",
+      "url": "https://github.com/mharish2797/Solr-News-Search-Engine",
+      "title": "News Search Engine using Solr, Lucene and NetworkX",
+      "start": "Feb 2020",
+      "end": "April 2020",
+      "details": [
+        "Set up a NYTimes based news search engine using Solr and Lucene.",
+        "Researched between different result ranking algorithms such as PageRank (NetworkX graph) and Lucene (Vector-Boolean Matrix).",
+        "Accomodated features like spelling correction and search suggestions using Apache Tika."
+      ],
+      "technology": [
+        "ir",
+        "solr",
+        "lucene",
+        "networkx",
+        "auto-correct",
+        "auto-complete",
+        "php"
+      ]
+    },
+    {
       "url": "https://github.com/mharish2797/Song-Clustering-using-Locality-Sensitive-Hashing",
       "title": "Song Clustering using Locality sensitive hashing",
       "start": "April 2019",
@@ -229,7 +316,7 @@
       "start": "March 2019",
       "end": "April 2019",
       "details": [
-        "Designed a Website and Android App for E-commerce through eBay APIs",
+        "Designed a Website and Android App for E-commerce through eBay APIs.",
         "Incorporated features like filtered search, auto-completion, animations, Google’s custom search, Facebook sharing."
       ],
       "technology": [
